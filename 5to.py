@@ -48,23 +48,93 @@
 # """
 
 # Exercise 10
-print "I am 6'2\" tall."  # escape double-quote inside string
-print 'I am 6\'2" tall.'   # escape single-quote inside string
+# print "I am 6'2\" tall."  # escape double-quote inside string
+# print 'I am 6\'2" tall.'   # escape single-quote inside string
 
-tabby_cat = "\tI'm tabbed in."
-persian_cat = "I'm split\non a line."
-backslash_cat = "I'm \\ a \\ cat."
+# tabby_cat = "\tI'm tabbed in."
+# persian_cat = "I'm split\non a line."
+# backslash_cat = "I'm \\ a \\ cat."
 
-fat_cat = """
-I'll do a list:
-\t* Cat food
-\t* Fishies
-\t* Catnip\n\t* Grass
-"""
+# fat_cat = """
+# I'll do a list:
+# \t* Cat food
+# \t* Fishies
+# \t* Catnip\n\t* Grass
+# """
 
-print tabby_cat
-print persian_cat
-print backslash_cat
-print fat_cat
+# print tabby_cat
+# print persian_cat
+# print backslash_cat
+# print fat_cat
+
+# while True:
+# 	for i in ["/","-","|","\\","|"]:
+# 		print "%s\r" % i,
+
+
+# Exercise 11
+# print "How old are you? ",
+# age = raw_input()
+# print "How tall are you? ",
+# height = raw_input()
+# print "How much do you weigh? ",
+# weight = raw_input()
+
+# print "So, you're %r old, %r tall and %r heavy." % (
+# 	age, height, weight)
+
+
+# Exercise 12
+# age = raw_input("How old are you? ")
+# height = raw_input("How tall are you? ")
+# weight = raw_input("How much do you weigh? ")
+
+# print "So, you're %r old, %r tall and %r heavy." % (age, height, weight)
+
+
+# Exercise 13
+# from sys import argv
+
+# script, first, second, third = argv
+
+# print "The script is called:", script
+# print "Your first variable is:", first
+# print "Your second variable is:", second
+# print "Your third variable is:", third
+
+
+# print "What is your favorite fruit? ",
+# fruit = raw_input()
+# print "What is your favorite movie? ",
+# movie = raw_input()
+# print "What is your favorite book? ",
+# book = raw_input()
+# print "What is your favorite country? ",
+# country = raw_input()
+# print "So you like to eat %s, watch %s, read %s, and travel to %s" % (fruit, movie, book, country)
+
+
+# Exercise 14
+from sys import argv
+
+script, user_name = argv
+prompt = '< '
+
+print "Hi %s, I'm the %s script." % (user_name, script)
+print "I'd like to ask you a few questions."
+print "Do you like me %s?" % user_name
+likes = raw_input(prompt)
+
+print "Where do you live %s?" % user_name
+lives = raw_input(prompt)
+
+print "What kind of computer do you have?"
+computer = raw_input(prompt)
+
+print """
+Alright, so you said %r about liking me.
+You live in %r.  Not sure where that is.
+And you have a %r computer.  Nice.
+""" % (likes, lives, computer)
 
 
